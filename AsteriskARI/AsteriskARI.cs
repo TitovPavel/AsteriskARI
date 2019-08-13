@@ -19,6 +19,8 @@ namespace AsteriskARI
         string Test(string mymessage);
         int TestSum(int a, int b);
 
+        void TestEvemt(string mymessage);
+
     }
 
     [ClassInterface(ClassInterfaceType.None)]
@@ -64,7 +66,6 @@ namespace AsteriskARI
             asyncEvent = (IAsyncEvent)connection;
             statusLine = (IStatusLine)connection;
         }
-
 
         /// <summary>
         /// Возвращается информация о компоненте
@@ -429,6 +430,11 @@ namespace AsteriskARI
         {
             return a + b;
 
+        }
+
+        public void TestEvemt(string mymessage)
+        {
+            asyncEvent.ExternalEvent("ARI", mymessage,"");
         }
     }
 
