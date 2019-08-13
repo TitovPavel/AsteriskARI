@@ -65,6 +65,7 @@ namespace AsteriskARI
             statusLine = (IStatusLine)connection;
         }
 
+
         /// <summary>
         /// Возвращается информация о компоненте
         /// </summary>
