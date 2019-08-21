@@ -7,6 +7,9 @@ using System.EnterpriseServices;
 using System.Collections;
 using System.Runtime.InteropServices;
 using System.Reflection;
+using AsterNET.ARI.Models;
+using AsterNET.ARI;
+
 
 namespace AsteriskARI
 {
@@ -17,6 +20,7 @@ namespace AsteriskARI
         [DispId(1)]
         //4. описываем методы которые можно будет вызывать из вне
         string Test(string mymessage);
+
         int TestSum(int a, int b);
 
         void TestEvemt(string mymessage);
@@ -53,6 +57,12 @@ namespace AsteriskARI
         private MethodInfo[] allMethodInfo;
 
         private string componentName;
+
+        public static AriClient ActionClient;
+        public static Bridge SimpleBridge;
+
+        private const string AppName = "bridge_test";
+
 
 
         /// <summary>
@@ -423,7 +433,23 @@ namespace AsteriskARI
 
         public string Test(string mymessage)
         {
-            return mymessage;
+
+            try
+            {
+                // Create a message actionClient to receive events on
+                //ActionClient = new AriClient(new StasisEndpoint("127.0.0.1", 8088, "dev", "test"), AppName);
+                return mymessage;
+
+                //return ActionClient.ToString();
+            }
+            catch (Exception ex)
+            {
+                return mymessage;
+                //return ex.ToString();
+
+            }
+
+            //return mymessage;
         }
 
         public int TestSum(int a, int b)

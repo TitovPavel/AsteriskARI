@@ -1,0 +1,16 @@
+﻿COM-объект для 1С:
+http://trueportal.ru/public/151246/ Как написать COM-объект для 1С на Visual Studio C# 2008
+https://v8book.ru/public/332786/ Библиотека классов для создания внешней компоненты 1С на C#
+https://rsdn.org/article/dotnet/cs1c.xml#EGBAC COM+-компонент для 1С на C#
+
+ARI:
+https://wiki.asterisk.org/wiki/display/AST/Getting+Started+with+ARI Getting Started with ARI
+http://ari.asterisk.org/ swagger
+https://asterisk-pbx.ru/wiki/asterisk/ari/ari_start Приступая к работе с ARI
+http://subnets.ru/blog/?p=5416 Asterisk REST Interface (ARI)
+https://voxlink.ru/kb/asterisk-configuration/obzor-asterisk-rest-interface-ari/ Обзор Asterisk REST Interface (ARI)
+https://github.com/skrusty/AsterNET.ARI AsterNET.ARI
+https://wiki.merionet.ru/ip-telephoniya/41/interesnoe-pro-ari-asterisk-rest-interface/ ИНТЕРЕСНОЕ ПРО ARI (ASTERISK REST INTERFACE)
+
+https://github.com/shachneff/BROM-Asterisk-Native BROM-Asterisk-Native
+http://wiki.simplit.info/doku.php/solution/sdk/rom-websocket Внешняя компонента ROM-WebSocket
